@@ -12,13 +12,13 @@ This notebook is built and run in Google Colab.
 
 ## Key Findings
 
-**Slogan Generator**
+**Slogan Generator:**
 The generator successfully produced slogans that stay relatively on topic for their industry, using vocabulary genuinely associated with each one. However, the sentences themselves are not fully coherent, reading more like clusters of relevant words rather than a true structured slogan.
 
-**Slogan Classifier**
+**Slogan Classifier:**
 The classifier performed poorly on the test set, with an accuracy of 21%, despite reaching ~99% accuracy on training data. This suggests overfitting, likely driven by some industries having relatively few training examples, and by several industries overlapping in the broader field they belong to.
 
-**Combining Models**
+**Combining Models:**
 When a generated "internet" slogan was passed to the classifier, it was labelled as marketing and advertising instead. The generated slogan did contain internet-related words like "web" and "digital", but more closely matched marketing and advertising in language. This suggested the classifier was picking up genuine patterns rather than randomly guessing, and highlights how much industries overlap in language, which likely limits how well the model can distinguish between them.
 
 ## Tools
